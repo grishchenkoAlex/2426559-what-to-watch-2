@@ -42,6 +42,7 @@ export function Player() {
               value={progress}
               max={ONE_HUNDRED_PERCENT}
             />
+            
             <div className="player__toggler" style={{ left: `${progress}%` }}>Toggler</div>
           </div>
           <div className="player__time-value">{timeLeft}</div>
