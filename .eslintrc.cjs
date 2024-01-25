@@ -14,10 +14,24 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'react-refresh/only-export-components': 'warn',
+    'react/no-array-index-key': 'warn',
+    '@typescript-eslint/member-delimiter-style': [
+      'error',
+      {
+        multiline: {
+          delimiter: 'comma',
+          requireLast: false,
+        },
+        singleline: {
+          delimiter: 'comma',
+          requireLast: false,
+        },
+      },
+    ],
   },
   overrides: [
     {
-      files: [ '*test*' ],
+      files: ['*test*'],
       rules: { '@typescript-eslint/unbound-method': 'off' }
     },
   ],
